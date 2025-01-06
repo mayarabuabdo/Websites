@@ -1,0 +1,218 @@
+:root{
+  --main-color:  rgb(249, 160, 59) ; 
+
+}
+
+.orange{
+  background-color: var(--main-color);
+ 
+}
+
+.orange:hover{
+  background-color: rgb(241, 128, 0) ;
+ 
+}
+.orange1{
+  color: var(--main-color);
+}
+.nav-link.active {
+  color: var(--main-color) !important; /* Add !important to override Bootstrap default */
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+  color:var(--main-color);
+}
+.navbar-nav .nav-item .nav-link{
+  font-size: 18px;
+  color: white;
+}
+
+.carousel-caption h1{
+
+font-size: 50px;
+font-weight: bolder;
+}
+
+.carousel-caption p {
+  font-size: 30px;
+  font-weight: bolder;
+}
+.carousel-caption{
+  margin-bottom: 250px;
+}
+
+.imgdark img{
+  position: relative;
+}
+.imgdark::after{
+  content: '';  /* We need this for the pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: rgba(0, 0, 0, 0.4);  /* Orange color with 50% opacity */
+}
+/*about*/
+.rest{
+  position: relative;
+  height: 100%;
+  z-index: 1;
+}
+.chef{
+  position: absolute; 
+  right: -20%; 
+  top: 60%; 
+  transform: translateY(-50%); 
+  z-index: 10; 
+  width: 60%;
+  height: 250px;
+  border-radius: 50%;
+}
+.about{
+  position: relative;
+  line-height: 100px;
+}
+.about::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 35%;
+  height: 5px;
+  width: 30%;
+  background-color: var(--main-color);
+}
+.col-lg-4 p{
+  font-size: 20px;
+}
+.about h1{
+  font-size: 40px;
+  line-height: 70px;
+}
+
+.menu{
+  position: relative;
+
+
+}
+.menu h1{
+  line-height: 60px;
+}
+.menu::after{
+  content: "";
+  position: absolute;
+  bottom: 0; 
+  width:45%;
+  height: 5px;
+  background-color: var(--main-color);
+left: 25%;
+
+
+}
+
+/*menu*/
+
+.menu1 .nav .nav-item .nav-link {
+color:black;
+}
+.menu1 .nav .nav-item .nav-link.active {
+  color: white !important; /* Add !important if not already */
+  background-color: var(--main-color) !important; /* Ensure no background conflicts */
+}
+
+.tab-pane .row .col-md-3 img{
+border-radius: 100%;
+height: 200px;
+}
+.tab-pane .row .col-sm-6 h3{
+color:var(--main-color);
+  }
+  .tab-pane .row .col-md-5 img{
+    height: 200px;
+    border-radius: 100%;
+  }
+  .tab-pane .row .col-md-5 h3{
+    color:var(--main-color);  
+  }
+  /*Features*/
+  #Features {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    background-image: url(restront/fish.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    width: 100%;
+    position: relative; /* Ensures stacking context */
+
+}
+
+
+#Features::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.Features {
+  position: relative; /* Needed for z-index to work */
+    z-index: 1; /* Ensure it appears above the overlay */
+}
+.card-title .bi{
+  background-color: var(--main-color);
+  color: white;
+}
+.card{
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+#Team h1{
+  color:var(--main-color);
+}
+
+.card-img-top{
+border-radius: 70%;
+position: relative;
+left:20px;
+height: 100px;
+width: 100px;
+
+}
+.img-g{
+  border-radius: 70%;
+background-color:var(--main-color);
+}
+
+#Cust{
+background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(restront/fish.png);
+background-repeat: no-repeat;
+background-size:cover;
+width: 100%;
+
+margin-top: 100px;
+margin-bottom: 100px;
+padding: 50px;
+
+}
+@media (min-width: 992px) {
+  .feedback {
+      width: 75%;
+  }
+}
+
+.foter{
+  background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(restront/cake.png);
+  background-repeat: no-repeat;
+background-size:cover;
+}
+
+
+
+
+
